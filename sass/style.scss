@@ -2,10 +2,21 @@ body {
 	background-color: #55acee;
 	color: white; 
 	text-align: center;
+	font-family: sans-serif;
 
-	header {
-		font-size: 30px;
+	h1 {
+		font-size: 65px;
 		margin-bottom: 80px;
+	}
+
+	h2 {
+		font-weight: 600;
+		font-size: 30px;
+	}
+
+	h3 {
+		font-weight: 400;
+		font-size: 18px;
 	}
 
 	.button-look {
@@ -18,12 +29,18 @@ body {
 		text-decoration: none;
 		display: block;
 		margin: 30px auto;
+		&:hover {
+			background-color: white;
+			color: #55acee;
+			transition: .4s;
+			font-weight: 500;
+		}
 		
 	}
 
 	button {
 		@extend .button-look;
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	a {

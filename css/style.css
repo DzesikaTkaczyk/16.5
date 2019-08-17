@@ -2,11 +2,22 @@ body {
   background-color: #55acee;
   color: white;
   text-align: center;
+  font-family: sans-serif;
 }
 
-body header {
-  font-size: 30px;
+body h1 {
+  font-size: 65px;
   margin-bottom: 80px;
+}
+
+body h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+body h3 {
+  font-weight: 400;
+  font-size: 18px;
 }
 
 body .button-look, body button, body a {
@@ -21,8 +32,15 @@ body .button-look, body button, body a {
   margin: 30px auto;
 }
 
+body .button-look:hover, body button:hover, body a:hover {
+  background-color: white;
+  color: #55acee;
+  transition: .4s;
+  font-weight: 500;
+}
+
 body button {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body a {
