@@ -1,7 +1,39 @@
 body {
   background-color: #55acee;
   color: white;
-  content-align: center;
+  text-align: center;
+}
+
+body header {
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+
+body .button-look, body button, body a {
+  background-color: #55acee;
+  border: 1px solid white;
+  color: white;
+  width: 400px;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 30px auto;
+}
+
+body button {
+  font-size: 16px;
+}
+
+body a {
+  font-size: 18px;
+}
+
+body .buttons {
+  position: absolute;
+  bottom: 70px;
+  text-align: center;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

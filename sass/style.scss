@@ -1,5 +1,40 @@
 body {
 	background-color: #55acee;
 	color: white; 
-	content-align: center; 
+	text-align: center;
+
+	header {
+		font-size: 30px;
+		margin-bottom: 80px;
+	}
+
+	.button-look {
+		background-color: #55acee;
+		border: 1px solid white;
+		color: white;
+		width: 400px;
+		padding: 10px 0;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		margin: 30px auto;
+		
+	}
+
+	button {
+		@extend .button-look;
+		font-size: 16px;
+	}
+
+	a {
+		@extend .button-look;
+		font-size: 18px;
+	}
+
+	.buttons {
+		position: absolute;
+		bottom: 70px;
+		text-align: center;
+		width: 100%;
+	}
 }
