@@ -1,8 +1,8 @@
 var tweetLink = "https://twitter.com/intent/tweet?text=";
-var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
 var prefix = "https://cors-anywhere.herokuapp.com/"
 
 function getQuote() {
+    var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&" + randomString();
     fetch(prefix + quoteUrl, { cache: "no-store" })
         .then(function(resp) {
             return resp.json();
@@ -40,3 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
         getQuote();
     });
 });
+
+function randomString() {
+    var chars = '0123456789';
+    var str = '';
+    for (var i = 0; i < 10; i++) {
+        str += chars[Math.floor(Math.random() * chars.length)];
+    }
+    return str;
+}
